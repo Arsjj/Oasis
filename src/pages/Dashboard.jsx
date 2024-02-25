@@ -1,15 +1,26 @@
 import DashboardLayout from "../features/dashboard/DashboardLayout";
 import DashboardFilter from "../features/dashboard/DashboardFilter";
 import Heading from "../ui/Heading";
-import Row from "../ui/Row";
+import styled from "styled-components";
+
+const RowWrapper = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+
+  @media (max-width: 768px) {
+    padding: 0 24px;
+  }
+`;
 
 function Dashboard() {
   return (
     <>
-      <Row type="horizontal">
+      <RowWrapper type="horizontal">
         <Heading as="h1">Dashboard</Heading>
         <DashboardFilter />
-      </Row>
+      </RowWrapper>
 
       <DashboardLayout />
     </>

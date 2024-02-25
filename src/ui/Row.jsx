@@ -4,6 +4,10 @@ const Row = styled.div`
   display: flex;
   flex-wrap: wrap;
 
+  @media (max-width: 768px) {
+    padding: 0 24px;
+  };
+
   ${(props) =>
     props.type === "horizontal" &&
     css`

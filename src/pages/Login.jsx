@@ -11,6 +11,14 @@ const LoginLayout = styled.main`
   justify-content: center;
   gap: 3.2rem;
   background-color: var(--color-grey-50);
+
+  @media (max-width: 640px) {
+    grid-template-columns: 80%;
+  }
+
+  @media (max-width: 500px) {
+    grid-template-columns: 95%;
+  }
 `;
 
 const AdminContainer = styled.main`
