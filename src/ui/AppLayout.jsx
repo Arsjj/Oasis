@@ -21,8 +21,14 @@ const Main = styled.main`
   overflow: scroll;
 
   @media (max-width: 768px) {
-    padding: 0;
-    overflow: hidden;
+    padding: 16px;
+    overflow: scroll;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    scrollbar-width: none;
   }
 `;
 
@@ -32,6 +38,10 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   gap: 3.2rem;
+
+  @media (max-width: 768px) {
+    gap: 0;
+  }
 `;
 
 function AppLayout() {

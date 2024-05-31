@@ -12,12 +12,25 @@ const StyledSidebar = styled.aside`
   display: flex;
   flex-direction: column;
   gap: 3.2rem;
+
+  @media (max-width: 768px) {
+    grid-row: 2/ 3;
+    padding: 24px 16px;
+  }
+`;
+
+const LogoContainer = styled.div`
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 function Sidebar() {
   return (
     <StyledSidebar>
-      <Logo />
+      <LogoContainer>
+        <Logo />
+      </LogoContainer>
       <MainNav />
       {/* <Uploader /> */}
     </StyledSidebar>

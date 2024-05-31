@@ -7,10 +7,11 @@ const RowWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  gap: 24px;
   width: 100%;
 
   @media (max-width: 768px) {
-    padding: 0 24px;
+    padding: 24px 0 36px 0;
   }
 `;
 

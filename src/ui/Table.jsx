@@ -9,6 +9,15 @@ const StyledTable = styled.div`
   border-radius: 7px;
   overflow: scroll;
   min-width: 750px;
+
+  @media (max-width: 768px) {
+    margin: 16px 0;
+  }
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  scrollbar-width: none;
 `;
 
 const CommonRow = styled.div`

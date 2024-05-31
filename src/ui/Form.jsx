@@ -18,10 +18,15 @@ const Form = styled.form`
       width: 80rem;
     `}
     
-  overflow: hidden;
+  overflow: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  scrollbar-width: none;
   font-size: 1.4rem;
 
-  @media (max-width: 640) {
+  @media (max-width: 768px) {
+    width: 100%;
     padding: 0
   }
 `;
