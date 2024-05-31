@@ -8,6 +8,10 @@ const StyledUserAvatar = styled.div`
   font-weight: 500;
   font-size: 1.4rem;
   color: var(--color-grey-600);
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 const Avatar = styled.img`

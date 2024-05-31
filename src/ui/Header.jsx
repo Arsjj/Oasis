@@ -12,9 +12,9 @@ const StyledHeader = styled.header`
   gap: 2.4rem;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
 
   @media (max-width: 768px) {
+    justify-content: start;
     padding: 16px;
   }
 `;
@@ -27,6 +27,14 @@ const LogoContainer = styled.div`
 
 const MenuContainer = styled.div`
   display: flex;
+  justify-content: flex-end;
+  width: 100%;
+
+  @media (max-width: 768px) {
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+    gap: 16px;
+  }
 `;
 
 function Header() {
