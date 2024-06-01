@@ -15,7 +15,7 @@ const StyledSidebar = styled.aside`
 
   @media (max-width: 768px) {
     grid-row: 2/ 3;
-    padding: 24px 16px;
+    padding: 24px 0;
   }
 `;
 

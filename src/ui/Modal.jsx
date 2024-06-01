@@ -14,6 +14,22 @@ const StyledModal = styled.div`
   box-shadow: var(--shadow-lg);
   padding: 3.2rem 4rem;
   transition: all 0.5s;
+
+  @media (max-width: 768px) {
+    top: 0;
+    transform: translate(-50%, 0);
+    overflow: scroll;
+    width: 90%;
+    padding-left: 3rem;
+    padding-right: 3rem;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* Hide scrollbars in Firefox */
+    scrollbar-width: none;
+  }
 `;
 
 const Overlay = styled.div`
@@ -26,6 +42,16 @@ const Overlay = styled.div`
   backdrop-filter: blur(4px);
   z-index: 1000;
   transition: all 0.5s;
+
+  overflow: scroll;
+  /* width: 100%; */
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbars in Firefox */
+  scrollbar-width: none;  
 `;
 
 const Button = styled.button`
